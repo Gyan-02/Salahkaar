@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
-    "typecheck": "tsc -b --pretty false",
+    "build": "node node_modules/typescript/bin/tsc -b && node node_modules/vite/bin/vite.js build",
+    "typecheck": "node node_modules/typescript/bin/tsc -b --pretty false",
     "test": "vitest run",
     "format": "prettier --check src vite.config.ts index.html package.json"
   },
