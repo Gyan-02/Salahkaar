@@ -1,0 +1,110 @@
+{
+  "schema_version": "1.0",
+  "reviewed": "2026-06-21",
+  "independent_fetch_status": "BLOCKED_BY_ENVIRONMENT",
+  "note": "The general web verifier, in-app browser connection, and direct network requests were unavailable. Statuses below distinguish user-supplied primary-source text from mirror-only or observational claims; they do not claim an independent fetch.",
+  "sources": [
+    {
+      "id": "pmkisan-homepage-2025",
+      "url": "https://pmkisan.gov.in/",
+      "authority": "Department of Agriculture & Farmers Welfare, Government of India",
+      "status": "USER_SUPPLIED_PRIMARY_SOURCE_TEXT",
+      "accepted_claims": ["cultivable-land family basis", "institutional landholder exclusion", "public-office exclusions", "government/PSE/local-body employee exclusion and staff exception", "monthly pension threshold of Rs 10,000 and staff exception", "last-assessment-year income-tax exclusion", "listed practising professional exclusion", "suspected land-after-2019-02-01 and duplicate-family-benefit verification flags"],
+      "facts": {
+        "monthly_pension_exclusion_threshold_inr": 10000,
+        "monthly_pension_period": "month",
+        "income_tax_lookback": "last assessment year",
+        "staff_exception": ["Multi Tasking Staff", "Class IV", "Group D"],
+        "professional_categories": ["Doctor", "Engineer", "Lawyer", "Chartered Accountant", "Architect"],
+        "verification_flags": ["land ownership acquired after 2019-02-01", "more than one family member receiving benefits"]
+      },
+      "rejected_or_corrected_claims": ["The Rs 10,000 figure is a monthly pension threshold, not a land-value threshold."]
+    },
+    {
+      "id": "pmkisan-operational-guidelines-unfetched",
+      "url": "https://pmkisan.gov.in/Documents/RevisedPM-KISANOperationalGuidelines(English).pdf",
+      "authority": "Department of Agriculture & Farmers Welfare, Government of India",
+      "status": "OFFICIAL_SOURCE_REQUIRED",
+      "pending_claims": ["precise family definition", "land cutoff mechanics", "inheritance/succession provisions", "NRI exclusion", "self-declaration mechanism"],
+      "note": "Only third-party mirror excerpts were supplied for these clauses; the original official PDF could not be fetched here."
+    },
+    {
+      "id": "nmmss-guidelines-2022",
+      "url": "https://dsel.education.gov.in/sites/default/files/NMMSS_Guidelines_22.pdf",
+      "authority": "Department of School Education & Literacy, Ministry of Education, Government of India",
+      "title": "Central Sector Scheme - National Means-Cum-Merit Scholarship Scheme - Revised Guidelines",
+      "status": "USER_SUPPLIED_PRIMARY_SOURCE_TEXT",
+      "accepted_claims": ["Rs 3,50,000 parental annual-income ceiling", "eligible and excluded school types", "Class VII and VIII marks rules and SC/ST relaxation", "MAT/SAT structure and pass cutoffs", "Rs 12,000 annual amount", "renewal/continuation marks and promotion rules", "one Central Government scholarship rule", "NSP and bank disbursement mechanics", "general study and conduct conditions", "discontinuation rules", "illness certificate provision"]
+      ,"facts": {
+        "parental_annual_income_limit_inr": 350000,
+        "scholarships_per_year": 100000,
+        "annual_scholarship_inr": 12000,
+        "monthly_scholarship_inr": 1000,
+        "maximum_years": 4,
+        "fresh_entry_class": 9,
+        "class_7_minimum_percent": 55,
+        "class_7_sc_st_minimum_percent": 50,
+        "mat_questions": 90,
+        "sat_questions": 90,
+        "test_duration_minutes_each": 90,
+        "mat_sat_aggregate_minimum_percent": 40,
+        "mat_sat_sc_st_aggregate_minimum_percent": 32,
+        "class_8_minimum_percent": 55,
+        "class_8_sc_st_minimum_percent": 50,
+        "class_10_continuation_minimum_percent": 60,
+        "class_10_sc_st_continuation_minimum_percent": 55,
+        "eligible_school_types": ["Government", "Government-aided", "local body"],
+        "excluded_school_types": ["Kendriya Vidyalaya", "Jawahar Navodaya Vidyalaya", "specified Government residential school", "private school"]
+      }
+    },
+    {
+      "id": "nmmss-2026-27-observed-activity",
+      "status": "OFFICIAL_SOURCE_REQUIRED",
+      "accepted_as_observation": ["program_active=true", "observed AY 2026-27 application activity"],
+      "pending_claims": ["formal post-March-2026 continuation authority", "31 August 2026 national deadline", "13-15 age band"],
+      "note": "Observed activity is not treated as a policy extension instrument."
+    },
+    {
+      "id": "nha-pmjay-overview-2026",
+      "url": "https://nha.gov.in/PM-JAY",
+      "authority": "National Health Authority, Ministry of Health & Family Welfare, Government of India",
+      "status": "USER_SUPPLIED_PRIMARY_SOURCE_TEXT",
+      "accepted_claims": ["Rs 5 lakh family annual health cover", "SECC 2011 rural deprivation and urban occupational basis", "no family size, age or gender cap", "pre-existing conditions covered from day one", "national portability", "D1-D5 and D7 rural criteria plus automatic inclusion", "11 urban occupational categories", "state database flexibility", "Citizen Portal and 14555 verification channels"],
+      "facts": {
+        "annual_cover_inr_per_family": 500000,
+        "eligibility_dataset": "SECC 2011 or applicable State beneficiary database",
+        "family_size_cap": null,
+        "age_cap": null,
+        "gender_restriction": null,
+        "pre_existing_conditions": "covered from day one",
+        "portable_nationally": true,
+        "rural_deprivation_criteria": {
+          "D1": "Only one room with kucha walls and kucha roof",
+          "D2": "No adult member between ages 16 to 59",
+          "D3": "No adult male member between ages 16 to 59",
+          "D4": "Disabled member and no able-bodied adult member",
+          "D5": "SC/ST household",
+          "D7": "Landless household deriving a major part of income from manual casual labour"
+        },
+        "automatic_rural_inclusion": ["Destitute or living on alms", "manual scavenger household", "primitive tribal group", "legally released bonded labour"],
+        "urban_occupational_categories": [
+          "Ragpicker",
+          "Beggar",
+          "Domestic worker",
+          "Street vendor, cobbler, hawker or other street service provider",
+          "Construction worker, plumber, mason, labourer, painter, welder, security guard, coolie or other head-load worker",
+          "Sweeper, sanitation worker or mali",
+          "Home-based worker, artisan, handicrafts worker or tailor",
+          "Transport worker, driver, conductor, helper, cart puller or rickshaw puller",
+          "Shop worker, assistant, peon, helper, delivery assistant, attendant or waiter",
+          "Electrician, mechanic, assembler or repair worker",
+          "Washer-man or chowkidar"
+        ],
+        "citizen_portal": "https://mera.pmjay.gov.in",
+        "call_centre": "14555"
+      },
+      "pending_claims": ["official exclusion list", "official document checklist", "70+ top-up provision", "chosen state beneficiary database"],
+      "rejected_or_not_encoded": ["income threshold", "third-party government-employee or income-tax-payer exclusions"]
+    }
+  ]
+}

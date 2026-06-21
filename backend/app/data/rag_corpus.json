@@ -1,0 +1,312 @@
+{
+  "schema_version": "1.0",
+  "locked": true,
+  "chunks": [
+    {
+      "id": "pmkisan-overview-01",
+      "program": "pm-kisan",
+      "source_url": "https://pmkisan.gov.in/",
+      "section_reference": "About the Scheme",
+      "retrieval_date": "2026-06-21",
+      "source_status": "USER_SUPPLIED_PRIMARY_SOURCE_TEXT",
+      "text": "With a view to provide income support to all landholding farmers' families in the country, having cultivable land, the Central Government has implemented a Central Sector Scheme, namely, Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)."
+    },
+    {
+      "id": "pmkisan-exclusion-01",
+      "program": "pm-kisan",
+      "source_url": "https://pmkisan.gov.in/",
+      "section_reference": "Scheme Exclusion — Institutional landholders",
+      "retrieval_date": "2026-06-21",
+      "source_status": "USER_SUPPLIED_PRIMARY_SOURCE_TEXT",
+      "text": "All Institutional Land holders."
+    },
+    {
+      "id": "pmkisan-exclusion-02",
+      "program": "pm-kisan",
+      "source_url": "https://pmkisan.gov.in/",
+      "section_reference": "Scheme Exclusion — Constitutional and elected posts",
+      "retrieval_date": "2026-06-21",
+      "source_status": "USER_SUPPLIED_PRIMARY_SOURCE_TEXT",
+      "text": "Former and present holders of constitutional posts; Former and present Ministers and State Ministers and former or present Members of Lok Sabha, Rajya Sabha, State Legislative Assemblies and State Legislative Councils, former and present Mayors of Municipal Corporations, and former and present Chairpersons of District Panchayats."
+    },
+    {
+      "id": "pmkisan-exclusion-03",
+      "program": "pm-kisan",
+      "source_url": "https://pmkisan.gov.in/",
+      "section_reference": "Scheme Exclusion — Government employees",
+      "retrieval_date": "2026-06-21",
+      "source_status": "USER_SUPPLIED_PRIMARY_SOURCE_TEXT",
+      "text": "All serving or retired officers and employees of Central or State Government Ministries, Offices, Departments and field units, Central or State PSEs and Attached offices or Autonomous Institutions under Government, as well as regular employees of Local Bodies, excluding Multi Tasking Staff, Class IV and Group D employees."
+    },
+    {
+      "id": "pmkisan-exclusion-04",
+      "program": "pm-kisan",
+      "source_url": "https://pmkisan.gov.in/",
+      "section_reference": "Scheme Exclusion — Pensioners",
+      "retrieval_date": "2026-06-21",
+      "source_status": "USER_SUPPLIED_PRIMARY_SOURCE_TEXT",
+      "text": "All superannuated or retired pensioners whose monthly pension is Rs. 10,000 or more, excluding Multi Tasking Staff, Class IV and Group D employees of the above category."
+    },
+    {
+      "id": "pmkisan-exclusion-05",
+      "program": "pm-kisan",
+      "source_url": "https://pmkisan.gov.in/",
+      "section_reference": "Scheme Exclusion — Income tax",
+      "retrieval_date": "2026-06-21",
+      "source_status": "USER_SUPPLIED_PRIMARY_SOURCE_TEXT",
+      "text": "All Persons who paid Income Tax in last assessment year."
+    },
+    {
+      "id": "pmkisan-exclusion-06",
+      "program": "pm-kisan",
+      "source_url": "https://pmkisan.gov.in/",
+      "section_reference": "Scheme Exclusion — Registered professionals",
+      "retrieval_date": "2026-06-21",
+      "source_status": "USER_SUPPLIED_PRIMARY_SOURCE_TEXT",
+      "text": "Professionals like Doctors, Engineers, Lawyers, Chartered Accountants, and Architects registered with Professional bodies and carrying out profession by undertaking practices."
+    },
+    {
+      "id": "pmkisan-family-01",
+      "program": "pm-kisan",
+      "source_url": "https://pmkisan.gov.in/Documents/RevisedPM-KISANOperationalGuidelines(English).pdf",
+      "section_reference": "Revised Operational Guidelines — Farmer family definition",
+      "retrieval_date": "2026-06-21",
+      "source_status": "OFFICIAL_SOURCE_REQUIRED",
+      "text": "A farmer family is defined as a husband, wife and minor children who own cultivable land."
+    },
+    {
+      "id": "pmkisan-cutoff-01",
+      "program": "pm-kisan",
+      "source_url": "https://pmkisan.gov.in/Documents/RevisedPM-KISANOperationalGuidelines(English).pdf",
+      "section_reference": "Revised Operational Guidelines — Land ownership cutoff",
+      "retrieval_date": "2026-06-21",
+      "source_status": "OFFICIAL_SOURCE_REQUIRED",
+      "text": "Eligibility is determined based on land ownership as of February 1, 2019."
+    },
+    {
+      "id": "pmkisan-inheritance-01",
+      "program": "pm-kisan",
+      "source_url": "https://pmkisan.gov.in/Documents/RevisedPM-KISANOperationalGuidelines(English).pdf",
+      "section_reference": "Revised Operational Guidelines clause 5.3.4 — Inheritance and mutation",
+      "retrieval_date": "2026-06-21",
+      "source_status": "OFFICIAL_SOURCE_REQUIRED",
+      "text": "The State Governments have to put in place the administrative mechanism based on their existing land revenue administrative regime. There should be clear cut responsibility entrusted to the officials responsible for undertaking mutation of land records. In case of transfer of land ownership due to inheritance, eligibility of the family under the scheme shall be determined as per the conditions of the scheme and the exclusion clauses."
+    },
+    {
+      "id": "pmkisan-nri-01",
+      "program": "pm-kisan",
+      "source_url": "https://pmkisan.gov.in/Documents/RevisedPM-KISANOperationalGuidelines(English).pdf",
+      "section_reference": "Revised Operational Guidelines — NRI exclusion",
+      "retrieval_date": "2026-06-21",
+      "source_status": "OFFICIAL_SOURCE_REQUIRED",
+      "text": "In case of new beneficiaries being uploaded on the PM-KISAN Portal, all landholding farmers' families who are Non-resident Indians (NRIs) in terms of the provisions of the Income Tax Act, 1961 shall be excluded from any benefit under the Scheme."
+    },
+    {
+      "id": "pmkisan-declaration-01",
+      "program": "pm-kisan",
+      "source_url": "https://pmkisan.gov.in/Documents/RevisedPM-KISANOperationalGuidelines(English).pdf",
+      "section_reference": "Revised Operational Guidelines — Self-declaration",
+      "retrieval_date": "2026-06-21",
+      "source_status": "OFFICIAL_SOURCE_REQUIRED",
+      "text": "For the purpose of exclusion State and UT Governments can certify the eligibility of the beneficiaries based on self declaration by the beneficiaries."
+    },
+    {
+      "id": "nmmss-eligibility-01",
+      "program": "nmmss",
+      "source_url": "https://dsel.education.gov.in/sites/default/files/NMMSS_Guidelines_22.pdf",
+      "section_reference": "Revised Guidelines — Scholarship quota and parental income",
+      "retrieval_date": "2026-06-21",
+      "source_status": "USER_SUPPLIED_PRIMARY_SOURCE_TEXT",
+      "text": "Under this scheme, it is proposed to award 100,000 scholarships to the gifted or meritorious students whose parental income is not more than Rs. 3,50,000 per annum from all sources at the time of selection of awardees for scholarship."
+    },
+    {
+      "id": "nmmss-school-01",
+      "program": "nmmss",
+      "source_url": "https://dsel.education.gov.in/sites/default/files/NMMSS_Guidelines_22.pdf",
+      "section_reference": "Revised Guidelines — Eligible and excluded school types",
+      "retrieval_date": "2026-06-21",
+      "source_status": "USER_SUPPLIED_PRIMARY_SOURCE_TEXT",
+      "text": "This scholarship will be provided on yearly basis to the students studying as regular students and entering in class IX in Government, Government-aided and local body schools. Students studying in Kendriya Vidyalayas, Jawahar Navodaya Vidyalayas, specified Residential Schools run by Centre or State Government Institutions, and private schools are not eligible for the scholarship under the scheme."
+    },
+    {
+      "id": "nmmss-amount-01",
+      "program": "nmmss",
+      "source_url": "https://dsel.education.gov.in/sites/default/files/NMMSS_Guidelines_22.pdf",
+      "section_reference": "Revised Guidelines — Scholarship amount",
+      "retrieval_date": "2026-06-21",
+      "source_status": "USER_SUPPLIED_PRIMARY_SOURCE_TEXT",
+      "text": "The amount of scholarship is Rs. 12,000 per annum at Rs. 1,000 per month."
+    },
+    {
+      "id": "nmmss-class7-01",
+      "program": "nmmss",
+      "source_url": "https://dsel.education.gov.in/sites/default/files/NMMSS_Guidelines_22.pdf",
+      "section_reference": "Revised Guidelines — Class VII marks for selection test",
+      "retrieval_date": "2026-06-21",
+      "source_status": "USER_SUPPLIED_PRIMARY_SOURCE_TEXT",
+      "text": "The students shall have minimum of 55 percent marks or equivalent grade in Class VII examination for appearing in selection test conducted during class VIII for award of scholarship, relaxable by 5 percent for SC and ST students."
+    },
+    {
+      "id": "nmmss-tests-01",
+      "program": "nmmss",
+      "source_url": "https://dsel.education.gov.in/sites/default/files/NMMSS_Guidelines_22.pdf",
+      "section_reference": "Revised Guidelines — MAT and SAT structure",
+      "retrieval_date": "2026-06-21",
+      "source_status": "USER_SUPPLIED_PRIMARY_SOURCE_TEXT",
+      "text": "Mental Ability Test shall consist of 90 multiple-choice questions testing verbal and non-verbal meta-cognitive abilities like reasoning and critical thinking. Scholastic Aptitude Test shall consist of 90 multiple-choice questions covering science, social studies and mathematics as taught in classes VII and VIII. Each test will be of 90 minutes duration. Children with disability will be given extra time, as applicable."
+    },
+    {
+      "id": "nmmss-test-cutoff-01",
+      "program": "nmmss",
+      "source_url": "https://dsel.education.gov.in/sites/default/files/NMMSS_Guidelines_22.pdf",
+      "section_reference": "Revised Guidelines — MAT and SAT pass cutoff",
+      "retrieval_date": "2026-06-21",
+      "source_status": "USER_SUPPLIED_PRIMARY_SOURCE_TEXT",
+      "text": "The students must pass both the tests, MAT and SAT, with at least 40 percent marks in aggregate taken together for these two tests. For SC and ST students, this cut off will be 32 percent marks."
+    },
+    {
+      "id": "nmmss-class8-01",
+      "program": "nmmss",
+      "source_url": "https://dsel.education.gov.in/sites/default/files/NMMSS_Guidelines_22.pdf",
+      "section_reference": "Revised Guidelines — Class VIII award requirement",
+      "retrieval_date": "2026-06-21",
+      "source_status": "USER_SUPPLIED_PRIMARY_SOURCE_TEXT",
+      "text": "At the time of selection for the award of scholarship the student must have scored at least 55 percent marks or equivalent grade in Class VIII examination. There will be 5 percent relaxation for SC and ST students."
+    },
+    {
+      "id": "nmmss-continuation-01",
+      "program": "nmmss",
+      "source_url": "https://dsel.education.gov.in/sites/default/files/NMMSS_Guidelines_22.pdf",
+      "section_reference": "Revised Guidelines — Continuation and promotion",
+      "retrieval_date": "2026-06-21",
+      "source_status": "USER_SUPPLIED_PRIMARY_SOURCE_TEXT",
+      "text": "The awardees should get minimum of 60 percent marks in Class X for continuation of scholarship, relaxable by 5 percent for SC and ST candidates. For continuing the scholarship in class X and XII, awardees should get clear promotion from class IX to X and from class XI to XII in the first attempt."
+    },
+    {
+      "id": "nmmss-single-scholarship-01",
+      "program": "nmmss",
+      "source_url": "https://dsel.education.gov.in/sites/default/files/NMMSS_Guidelines_22.pdf",
+      "section_reference": "Revised Guidelines — Single Central scholarship",
+      "retrieval_date": "2026-06-21",
+      "source_status": "USER_SUPPLIED_PRIMARY_SOURCE_TEXT",
+      "text": "A student can avail only one Scholarship under any Central Government Scholarship scheme."
+    },
+    {
+      "id": "nmmss-disbursement-01",
+      "program": "nmmss",
+      "source_url": "https://dsel.education.gov.in/sites/default/files/NMMSS_Guidelines_22.pdf",
+      "section_reference": "Revised Guidelines — Bank account, NSP and renewal",
+      "retrieval_date": "2026-06-21",
+      "source_status": "USER_SUPPLIED_PRIMARY_SOURCE_TEXT",
+      "text": "Awardees will be required to open bank accounts preferably in SBI, a public sector bank or a scheduled bank having core banking facility. Applications through the National Scholarship Portal will be verified by State Governments and UT Administrations and sent to the Ministry for sanction. Scholarships will be discontinued if students do not renew their application on NSP within the stipulated time period."
+    },
+    {
+      "id": "nmmss-general-conditions-01",
+      "program": "nmmss",
+      "source_url": "https://dsel.education.gov.in/sites/default/files/NMMSS_Guidelines_22.pdf",
+      "section_reference": "Revised Guidelines — General eligibility conditions",
+      "retrieval_date": "2026-06-21",
+      "source_status": "USER_SUPPLIED_PRIMARY_SOURCE_TEXT",
+      "text": "An awardee is eligible provided the student takes up studies in approved courses, maintains good conduct certified by the Head of the Institution, continues studies as a regular student in a Government, Government-aided or Local Body school, does not remain absent without proper leave, and takes up studies on a whole time basis."
+    },
+    {
+      "id": "nmmss-disqualifiers-01",
+      "program": "nmmss",
+      "source_url": "https://dsel.education.gov.in/sites/default/files/NMMSS_Guidelines_22.pdf",
+      "section_reference": "Revised Guidelines — Discontinuation and disqualifiers",
+      "retrieval_date": "2026-06-21",
+      "source_status": "USER_SUPPLIED_PRIMARY_SOURCE_TEXT",
+      "text": "No scholarship shall be available for studies abroad. If an awardee leaves the course of study within one month of registration or admission, no scholarship shall be paid. Scholarship is discontinued if a gap of one academic session arises in studies, and a scholarship once discontinued under the disbursement rules cannot be revived."
+    },
+    {
+      "id": "nmmss-illness-01",
+      "program": "nmmss",
+      "source_url": "https://dsel.education.gov.in/sites/default/files/NMMSS_Guidelines_22.pdf",
+      "section_reference": "Revised Guidelines — Serious illness and examination absence",
+      "retrieval_date": "2026-06-21",
+      "source_status": "USER_SUPPLIED_PRIMARY_SOURCE_TEXT",
+      "text": "If a student cannot appear at the annual examination due to serious illness, the student should send a medical certificate through the Head of the Institution within three months of falling ill. The duration of illness should be clearly certified by a specialist who is a Registered Medical Practitioner."
+    },
+    {
+      "id": "pmjay-overview-01",
+      "program": "ayushman-bharat-pm-jay",
+      "source_url": "https://www.pmjay.gov.in",
+      "section_reference": "PM-JAY overview and health cover",
+      "retrieval_date": "2026-06-21",
+      "source_status": "USER_SUPPLIED_PRIMARY_SOURCE_TEXT",
+      "text": "Ayushman Bharat PM-JAY aims to provide a health cover of Rs. 5 lakhs per family per year for secondary and tertiary care hospitalization to poor and vulnerable families. Households are included based on deprivation and occupational criteria of Socio-Economic Caste Census 2011 for rural and urban areas respectively."
+    },
+    {
+      "id": "pmjay-family-01",
+      "program": "ayushman-bharat-pm-jay",
+      "source_url": "https://www.pmjay.gov.in",
+      "section_reference": "PM-JAY family, age, gender and pre-existing conditions",
+      "retrieval_date": "2026-06-21",
+      "source_status": "USER_SUPPLIED_PRIMARY_SOURCE_TEXT",
+      "text": "There is no restriction on family size, age or gender. All pre-existing conditions are covered from day one."
+    },
+    {
+      "id": "pmjay-portability-01",
+      "program": "ayushman-bharat-pm-jay",
+      "source_url": "https://www.pmjay.gov.in",
+      "section_reference": "PM-JAY national portability",
+      "retrieval_date": "2026-06-21",
+      "source_status": "USER_SUPPLIED_PRIMARY_SOURCE_TEXT",
+      "text": "Benefits of the scheme are portable across the country. A beneficiary can visit any empanelled public or private hospital in India to avail cashless treatment."
+    },
+    {
+      "id": "pmjay-secc-01",
+      "program": "ayushman-bharat-pm-jay",
+      "source_url": "https://www.pmjay.gov.in",
+      "section_reference": "PM-JAY SECC 2011 eligibility basis",
+      "retrieval_date": "2026-06-21",
+      "source_status": "USER_SUPPLIED_PRIMARY_SOURCE_TEXT",
+      "text": "Inclusion of households is based on deprivation and occupational criteria of the Socio-Economic Caste Census 2011 for rural and urban areas respectively. It also includes families covered in RSBY that were not present in the SECC 2011 database."
+    },
+    {
+      "id": "pmjay-rural-01",
+      "program": "ayushman-bharat-pm-jay",
+      "source_url": "https://www.pmjay.gov.in",
+      "section_reference": "PM-JAY rural deprivation criteria D1-D5 and D7",
+      "retrieval_date": "2026-06-21",
+      "source_status": "USER_SUPPLIED_PRIMARY_SOURCE_TEXT",
+      "text": "Rural inclusion covers D1: only one room with kucha walls and kucha roof; D2: no adult member between ages 16 to 59; D3: no adult male member between ages 16 to 59; D4: disabled member and no able-bodied adult member; D5: SC or ST households; and D7: landless households deriving a major part of income from manual casual labour."
+    },
+    {
+      "id": "pmjay-automatic-01",
+      "program": "ayushman-bharat-pm-jay",
+      "source_url": "https://www.pmjay.gov.in",
+      "section_reference": "PM-JAY rural automatic inclusion",
+      "retrieval_date": "2026-06-21",
+      "source_status": "USER_SUPPLIED_PRIMARY_SOURCE_TEXT",
+      "text": "Rural automatic inclusion covers destitute households or those living on alms, manual scavenger households, primitive tribal groups, and legally released bonded labour."
+    },
+    {
+      "id": "pmjay-urban-01",
+      "program": "ayushman-bharat-pm-jay",
+      "source_url": "https://www.pmjay.gov.in",
+      "section_reference": "PM-JAY urban occupational categories",
+      "retrieval_date": "2026-06-21",
+      "source_status": "USER_SUPPLIED_PRIMARY_SOURCE_TEXT",
+      "text": "Urban occupational categories include ragpickers; beggars; domestic workers; street vendors, cobblers, hawkers and other street service providers; construction workers, plumbers, masons, labourers, painters, welders, security guards and head-load workers; sweepers, sanitation workers and malis; home-based workers, artisans, handicrafts workers and tailors; transport workers, drivers, conductors, helpers, cart pullers and rickshaw pullers; shop workers, assistants, peons, helpers, delivery assistants, attendants and waiters; electricians, mechanics, assemblers and repair workers; washer-men and chowkidars."
+    },
+    {
+      "id": "pmjay-state-flexibility-01",
+      "program": "ayushman-bharat-pm-jay",
+      "source_url": "https://www.pmjay.gov.in",
+      "section_reference": "PM-JAY State beneficiary database flexibility",
+      "retrieval_date": "2026-06-21",
+      "source_status": "USER_SUPPLIED_PRIMARY_SOURCE_TEXT",
+      "text": "States have flexibility to use their own beneficiary database for PM-JAY, while ensuring that all families eligible on the basis of the SECC database are also covered."
+    },
+    {
+      "id": "pmjay-verification-01",
+      "program": "ayushman-bharat-pm-jay",
+      "source_url": "https://www.pmjay.gov.in",
+      "section_reference": "PM-JAY citizen eligibility verification channels",
+      "retrieval_date": "2026-06-21",
+      "source_status": "USER_SUPPLIED_PRIMARY_SOURCE_TEXT",
+      "text": "The Citizen Portal at mera.pmjay.gov.in allows citizens to search the beneficiary database to ascertain eligibility. The national toll-free Citizen Call Centre at 14555 allows beneficiaries to find eligibility information, nearest hospitals and Common Service Centres."
+    }
+  ]
+}

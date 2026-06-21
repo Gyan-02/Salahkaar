@@ -1,0 +1,128 @@
+{
+  "schema_version": "1.1",
+  "official_source_required": true,
+  "programs": [
+    {
+      "id": "pm-kisan",
+      "name": "PM-KISAN",
+      "description": "Income support for qualifying landholding farmer families.",
+      "official_data_status": "partially_verified",
+      "eligibility_rules_complete": false,
+      "policy_status": "PARTIAL_RULES_ACTIVE",
+      "program_active": null,
+      "program_active_marker": "# OFFICIAL_SOURCE_REQUIRED",
+      "program_active_note": "Current operation was not independently verified in this environment.",
+      "last_verified": "2026-06-21",
+      "source_ids": ["pmkisan-homepage-2025", "pmkisan-operational-guidelines-unfetched"],
+      "official_sources": ["https://pmkisan.gov.in/"],
+      "official_requirements": {
+        "land_cutoff_and_inheritance": {"value": "PLACEHOLDER", "marker": "# OFFICIAL_SOURCE_REQUIRED", "needed": "Verify the cutoff, succession and inheritance clauses against the original PM-KISAN PDF."},
+        "nri_exclusion": {"value": "PLACEHOLDER", "marker": "# OFFICIAL_SOURCE_REQUIRED", "needed": "Verify the NRI clause against the original official guideline/circular."},
+        "required_documents": {"value": "PLACEHOLDER", "marker": "# OFFICIAL_SOURCE_REQUIRED", "needed": "Official accepted document, field, validity and verification checklist."},
+        "self_declaration": {"value": "PLACEHOLDER", "marker": "# OFFICIAL_SOURCE_REQUIRED", "needed": "Verify the exclusion self-declaration clause in the original official PDF."}
+      },
+      "required_documents": [],
+      "required_profile_fields": [
+        "family_owns_cultivable_land",
+        "institutional_landholder",
+        "holds_excluded_public_office",
+        "excluded_government_employee",
+        "excluded_high_pensioner",
+        "paid_income_tax_last_assessment_year",
+        "practicing_registered_professional"
+      ],
+      "follow_up_questions": [
+        {"field": "family_owns_cultivable_land", "question": "Does your farmer family own cultivable land?"},
+        {"field": "institutional_landholder", "question": "Is the land held by an institution?"},
+        {"field": "holds_excluded_public_office", "question": "Does any family member fall within the listed constitutional-post, minister, legislator, mayor, or district-panchayat-chairperson categories?"},
+        {"field": "excluded_government_employee", "question": "Does any family member fall within the excluded serving or retired government, PSE, autonomous-institution, or local-body employee categories, after applying the stated staff exceptions?"},
+        {"field": "excluded_high_pensioner", "question": "Does any family member receive a monthly pension of at least Rs 10,000 under the listed category, after applying the stated staff exceptions?"},
+        {"field": "paid_income_tax_last_assessment_year", "question": "Did any family member pay income tax in the last assessment year?"},
+        {"field": "practicing_registered_professional", "question": "Is any family member a listed registered professional who is actively practising?"}
+      ],
+      "eligibility_rules": [
+        {"id": "pmkisan_cultivable_land", "field": "family_owns_cultivable_land", "operator": "==", "value": true, "description": "The farmer family must own cultivable land.", "enabled": true, "official_source": "https://pmkisan.gov.in/"},
+        {"id": "pmkisan_not_institutional", "field": "institutional_landholder", "operator": "==", "value": false, "description": "Institutional landholders are excluded.", "enabled": true, "official_source": "https://pmkisan.gov.in/"},
+        {"id": "pmkisan_no_excluded_public_office", "field": "holds_excluded_public_office", "operator": "==", "value": false, "description": "The supplied official public-office categories are excluded.", "enabled": true, "official_source": "https://pmkisan.gov.in/"},
+        {"id": "pmkisan_no_excluded_government_employee", "field": "excluded_government_employee", "operator": "==", "value": false, "description": "The supplied government/PSE/local-body employee categories are excluded subject to stated staff exceptions.", "enabled": true, "official_source": "https://pmkisan.gov.in/"},
+        {"id": "pmkisan_no_excluded_high_pensioner", "field": "excluded_high_pensioner", "operator": "==", "value": false, "description": "Specified pensioners receiving at least Rs 10,000 monthly are excluded subject to stated staff exceptions.", "enabled": true, "official_source": "https://pmkisan.gov.in/"},
+        {"id": "pmkisan_no_recent_income_tax", "field": "paid_income_tax_last_assessment_year", "operator": "==", "value": false, "description": "Persons who paid income tax in the last assessment year are excluded.", "enabled": true, "official_source": "https://pmkisan.gov.in/"},
+        {"id": "pmkisan_no_practicing_registered_professional", "field": "practicing_registered_professional", "operator": "==", "value": false, "description": "Listed registered professionals actively carrying out practice are excluded.", "enabled": true, "official_source": "https://pmkisan.gov.in/"}
+      ]
+    },
+    {
+      "id": "nmmss",
+      "name": "National Means-cum-Merit Scholarship Scheme (NMMSS)",
+      "description": "NMMSS fresh-selection rules from the supplied revised guidelines; applications are processed through NSP.",
+      "official_data_status": "partially_verified",
+      "eligibility_rules_complete": false,
+      "policy_status": "PARTIAL_RULES_ACTIVE",
+      "program_active": true,
+      "program_active_marker": "# OFFICIAL_SOURCE_REQUIRED",
+      "program_active_note": "True only from observed AY 2026-27 portal/application activity. No official extension or renewal instrument confirming post-March-2026 policy authority was supplied or independently located.",
+      "last_verified": "2026-06-21",
+      "source_ids": ["nmmss-guidelines-2022", "nmmss-2026-27-observed-activity"],
+      "official_sources": ["https://dsel.education.gov.in/sites/default/files/NMMSS_Guidelines_22.pdf"],
+      "official_requirements": {
+        "post_2026_authority": {"value": "PLACEHOLDER", "marker": "# OFFICIAL_SOURCE_REQUIRED", "needed": "Official extension, continuation, Cabinet approval or revised guideline covering AY 2026-27."},
+        "age_band_13_15": {"value": "PLACEHOLDER", "marker": "# OFFICIAL_SOURCE_REQUIRED", "needed": "The reported 13-15 age band is absent from the supplied revised guidelines and is not an active rule."},
+        "required_documents": {"value": "PLACEHOLDER", "marker": "# OFFICIAL_SOURCE_REQUIRED", "needed": "Current AY 2026-27 fresh/renewal document and verification checklist."},
+        "application_deadline": {"value": "PLACEHOLDER", "marker": "# OFFICIAL_SOURCE_REQUIRED", "needed": "Verify the observed 31 August 2026 deadline on an official national/state notification."}
+      },
+      "required_documents": [],
+      "required_profile_fields": [
+        "parental_annual_income",
+        "entering_class",
+        "attends_eligible_school_type",
+        "meets_class_7_marks_rule",
+        "passed_mat_sat_rule",
+        "meets_class_8_marks_rule",
+        "receives_other_central_scholarship"
+      ],
+      "follow_up_questions": [
+        {"field": "parental_annual_income", "question": "What is the student's parental annual income from all sources?"},
+        {"field": "entering_class", "question": "Which class is the student entering for the fresh award?"},
+        {"field": "attends_eligible_school_type", "question": "Is the student a regular student in a Government, Government-aided, or local-body school and not in a KV, JNV, excluded residential school, or private school?"},
+        {"field": "meets_class_7_marks_rule", "question": "Does the student meet the Class VII marks rule: 55%, or 50% for the stated SC/ST relaxation?"},
+        {"field": "passed_mat_sat_rule", "question": "Does the student meet the combined MAT/SAT rule: 40%, or 32% for SC/ST?"},
+        {"field": "meets_class_8_marks_rule", "question": "Does the student meet the Class VIII award-stage marks rule: 55%, or 50% for SC/ST?"},
+        {"field": "receives_other_central_scholarship", "question": "Is the student availing another Central Government scholarship?"}
+      ],
+      "eligibility_rules": [
+        {"id": "nmmss_income_limit", "field": "parental_annual_income", "operator": "<=", "value": 350000, "description": "Parental income must not exceed Rs 3,50,000 per annum from all sources at selection.", "enabled": true, "official_source": "https://dsel.education.gov.in/sites/default/files/NMMSS_Guidelines_22.pdf"},
+        {"id": "nmmss_entering_class_9", "field": "entering_class", "operator": "==", "value": 9, "description": "The fresh scholarship is for eligible regular students entering Class IX.", "enabled": true, "official_source": "https://dsel.education.gov.in/sites/default/files/NMMSS_Guidelines_22.pdf"},
+        {"id": "nmmss_eligible_school", "field": "attends_eligible_school_type", "operator": "==", "value": true, "description": "The student must attend an eligible Government, Government-aided, or local-body school and not an excluded school type.", "enabled": true, "official_source": "https://dsel.education.gov.in/sites/default/files/NMMSS_Guidelines_22.pdf"},
+        {"id": "nmmss_class_7_marks", "field": "meets_class_7_marks_rule", "operator": "==", "value": true, "description": "The Class VII marks requirement, including the stated SC/ST relaxation, must be met.", "enabled": true, "official_source": "https://dsel.education.gov.in/sites/default/files/NMMSS_Guidelines_22.pdf"},
+        {"id": "nmmss_mat_sat", "field": "passed_mat_sat_rule", "operator": "==", "value": true, "description": "The combined MAT/SAT pass requirement, including the stated SC/ST cutoff, must be met.", "enabled": true, "official_source": "https://dsel.education.gov.in/sites/default/files/NMMSS_Guidelines_22.pdf"},
+        {"id": "nmmss_class_8_marks", "field": "meets_class_8_marks_rule", "operator": "==", "value": true, "description": "The Class VIII award-stage marks requirement, including the stated SC/ST relaxation, must be met.", "enabled": true, "official_source": "https://dsel.education.gov.in/sites/default/files/NMMSS_Guidelines_22.pdf"},
+        {"id": "nmmss_single_central_scholarship", "field": "receives_other_central_scholarship", "operator": "==", "value": false, "description": "A student may avail only one Central Government scholarship.", "enabled": true, "official_source": "https://dsel.education.gov.in/sites/default/files/NMMSS_Guidelines_22.pdf"}
+      ]
+    },
+    {
+      "id": "ayushman-bharat-pm-jay",
+      "name": "Ayushman Bharat PM-JAY",
+      "description": "PM-JAY eligibility is established through the applicable official SECC/state beneficiary database.",
+      "official_data_status": "partially_verified",
+      "eligibility_rules_complete": false,
+      "policy_status": "OFFICIAL_RULES_PENDING",
+      "demo_jurisdiction": "Bihar",
+      "baseline_reference_dataset": "SECC 2011 rural deprivation and urban occupational criteria",
+      "program_active": null,
+      "program_active_marker": "# OFFICIAL_SOURCE_REQUIRED",
+      "program_active_note": "Current active status was not independently fetched in this environment.",
+      "last_verified": "2026-06-21",
+      "source_ids": ["nha-pmjay-overview-2026"],
+      "official_sources": ["https://nha.gov.in/PM-JAY"],
+      "official_requirements": {
+        "bihar_state_beneficiary_database": {"value": "PLACEHOLDER", "marker": "# OFFICIAL_SOURCE_REQUIRED", "needed": "Official Bihar beneficiary dataset, inclusion mapping, version and verification mechanism. Do not infer this from the national baseline."},
+        "exclusion_list": {"value": "PLACEHOLDER", "marker": "# OFFICIAL_SOURCE_REQUIRED", "needed": "No official exclusion list was present in the supplied NHA page text."},
+        "required_documents": {"value": "PLACEHOLDER", "marker": "# OFFICIAL_SOURCE_REQUIRED", "needed": "Official accepted identity/family/verification documents for the chosen state workflow."},
+        "senior_70_plus_top_up": {"value": "PLACEHOLDER", "marker": "# OFFICIAL_SOURCE_REQUIRED", "needed": "Verify the separate 70+ provision through an NHA/PM-JAY primary release before use."}
+      },
+      "required_documents": [],
+      "required_profile_fields": [],
+      "follow_up_questions": [],
+      "eligibility_rules": []
+    }
+  ]
+}

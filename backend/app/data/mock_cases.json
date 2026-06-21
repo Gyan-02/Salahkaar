@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0",
+  "notice": "Synthetic demonstration data only. Expected analysis outputs are added and locked during phases 7-9.",
+  "cases": [
+    {
+      "id": "pm-kisan-name-land-mismatch",
+      "program_id": "pm-kisan",
+      "documents": [
+        {"document_type": "aadhaar", "filename": "mock-aadhaar.json", "fields": {"name": "Ravi Kumar", "address": "Patna"}},
+        {"document_type": "land_record", "filename": "mock-land-record.json", "fields": {"owner_name": "Ravi Kamar", "address": "Patna"}}
+      ],
+      "answers": {
+        "family_owns_cultivable_land": true,
+        "institutional_landholder": false,
+        "holds_excluded_public_office": false,
+        "excluded_government_employee": false,
+        "excluded_high_pensioner": false,
+        "paid_income_tax_last_assessment_year": false,
+        "practicing_registered_professional": false
+      },
+      "expected_contradiction_ids": ["cross_document_name_mismatch"],
+      "expected_readiness_score": 75,
+      "expected_action_ids": ["resolve_name_mismatch"]
+    },
+    {
+      "id": "pm-kisan-clean-readiness",
+      "program_id": "pm-kisan",
+      "documents": [
+        {"document_type": "aadhaar", "filename": "clean-aadhaar.json", "fields": {"name": "Ravi Kumar", "address": "Patna"}},
+        {"document_type": "land_record", "filename": "clean-land-record.json", "fields": {"owner_name": "Ravi Kumar", "address": "Patna", "land_ownership_date": "2018-10-01"}}
+      ],
+      "answers": {
+        "family_owns_cultivable_land": true,
+        "institutional_landholder": false,
+        "holds_excluded_public_office": false,
+        "excluded_government_employee": false,
+        "excluded_high_pensioner": false,
+        "paid_income_tax_last_assessment_year": false,
+        "practicing_registered_professional": false
+      },
+      "expected_contradiction_ids": [],
+      "expected_readiness_score": 100,
+      "expected_action_ids": []
+    },
+    {
+      "id": "nmmss-expired-income-bank-name",
+      "program_id": "nmmss",
+      "documents": [
+        {"document_type": "aadhaar", "filename": "mock-aadhaar.json", "fields": {"name": "Asha Devi"}},
+        {"document_type": "bank_passbook", "filename": "mock-bank.json", "fields": {"name": "Asha Davi"}},
+        {"document_type": "income_certificate", "filename": "mock-income.json", "fields": {"name": "Asha Devi", "expiry_date": "2025-01-01"}}
+      ],
+      "answers": {
+        "parental_annual_income": 300000,
+        "entering_class": 9,
+        "attends_eligible_school_type": true,
+        "meets_class_7_marks_rule": true,
+        "passed_mat_sat_rule": true,
+        "meets_class_8_marks_rule": true,
+        "receives_other_central_scholarship": false
+      },
+      "expected_contradiction_ids": ["bank_account_holder_mismatch", "expired_document"],
+      "expected_readiness_score": 50,
+      "expected_action_ids": ["resolve_bank_name_mismatch", "renew_expired_document"]
+    },
+    {
+      "id": "pm-jay-family-composition-mismatch",
+      "program_id": "ayushman-bharat-pm-jay",
+      "documents": [
+        {"document_type": "family_record", "filename": "mock-family-a.json", "fields": {"family_members": ["Meera", "Arun"]}},
+        {"document_type": "family_record", "filename": "mock-family-b.json", "fields": {"family_members": ["Meera", "Arun", "Kiran"]}}
+      ],
+      "expected_contradiction_ids": ["family_composition_mismatch"],
+      "expected_readiness_score": null,
+      "expected_action_ids": []
+    }
+  ]
+}

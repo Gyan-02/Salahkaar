@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0",
+  "actions": [
+    {
+      "id": "resolve_name_mismatch",
+      "trigger": {"issue_id": "cross_document_name_mismatch"},
+      "priority": 1,
+      "instruction": "Verify the correct name and update the inconsistent source document through its issuing authority.",
+      "enabled": true
+    },
+    {
+      "id": "resolve_bank_name_mismatch",
+      "trigger": {"issue_id": "bank_account_holder_mismatch"},
+      "priority": 1,
+      "instruction": "Ask the bank to correct the account-holder name or provide a bank record matching the identity document.",
+      "enabled": true
+    },
+    {
+      "id": "renew_expired_document",
+      "trigger": {"issue_id": "expired_document"},
+      "priority": 1,
+      "instruction": "Renew the expired document through its issuing authority and extract the replacement.",
+      "enabled": true
+    },
+    {
+      "id": "resolve_address_mismatch",
+      "trigger": {"issue_id": "cross_document_address_mismatch"},
+      "priority": 2,
+      "instruction": "Confirm the current address and correct or replace inconsistent documents where required.",
+      "enabled": true
+    },
+    {
+      "id": "answer_follow_up",
+      "trigger": {"missing_required_field": true},
+      "priority": 2,
+      "instruction": "Answer the generated follow-up question and rerun the assessment.",
+      "enabled": true
+    },
+    {
+      "id": "resolve_family_composition_mismatch",
+      "trigger": {"issue_id": "family_composition_mismatch"},
+      "priority": 1,
+      "instruction": "Confirm the current family composition and correct the inconsistent source record through its issuing authority.",
+      "enabled": true
+    },
+    {
+      "id": "submit_application",
+      "trigger": {"ready_to_submit": true},
+      "priority": 99,
+      "instruction": "Review the final report, then apply through the program's official application channel.",
+      "enabled": true
+    }
+  ]
+}

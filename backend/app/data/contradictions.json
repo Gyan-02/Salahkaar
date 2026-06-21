@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0",
+  "rules": [
+    {
+      "id": "cross_document_name_mismatch",
+      "type": "field_mismatch",
+      "fields": ["name", "owner_name"],
+      "document_types": [],
+      "severity": "HIGH",
+      "message": "Names differ across supplied documents. Review the source documents before applying.",
+      "enabled": true
+    },
+    {
+      "id": "cross_document_address_mismatch",
+      "type": "field_mismatch",
+      "fields": ["address"],
+      "document_types": [],
+      "severity": "MEDIUM",
+      "message": "Addresses differ across supplied documents and may require verification.",
+      "enabled": true
+    },
+    {
+      "id": "cross_document_dob_mismatch",
+      "type": "field_mismatch",
+      "fields": ["dob"],
+      "document_types": [],
+      "severity": "HIGH",
+      "message": "Dates of birth differ across supplied documents.",
+      "enabled": true
+    },
+    {
+      "id": "bank_account_holder_mismatch",
+      "type": "field_mismatch",
+      "fields": ["name"],
+      "document_types": ["aadhaar", "bank_passbook"],
+      "severity": "HIGH",
+      "message": "The bank account holder name differs from the identity document name.",
+      "enabled": true
+    },
+    {
+      "id": "expired_document",
+      "type": "date_expired",
+      "fields": ["expiry_date"],
+      "document_types": [],
+      "severity": "HIGH",
+      "message": "A supplied document has expired.",
+      "enabled": true
+    },
+    {
+      "id": "family_composition_mismatch",
+      "type": "field_mismatch",
+      "fields": ["family_members"],
+      "document_types": ["family_record"],
+      "severity": "HIGH",
+      "message": "Family composition differs across supplied records.",
+      "enabled": true
+    }
+  ]
+}

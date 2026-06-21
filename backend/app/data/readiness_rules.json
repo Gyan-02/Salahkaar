@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "policy_note": "Score weights are an MVP product heuristic, not government policy or an eligibility determination.",
+  "starting_score": 100,
+  "risk_bands": {"LOW": [80, 100], "MEDIUM": [50, 79.999], "HIGH": [0, 49.999]},
+  "rules": [
+    {
+      "id": "high_severity_contradiction",
+      "condition": {"issue_severity": "HIGH"},
+      "score_delta": -25,
+      "blocker": true,
+      "message": "Resolve the high-severity document contradiction before submission.",
+      "enabled": true
+    },
+    {
+      "id": "medium_severity_contradiction",
+      "condition": {"issue_severity": "MEDIUM"},
+      "score_delta": -12,
+      "blocker": false,
+      "message": "Review the document inconsistency before submission.",
+      "enabled": true
+    },
+    {
+      "id": "missing_required_information",
+      "condition": {"missing_required_field": true},
+      "score_delta": -15,
+      "blocker": true,
+      "message": "Provide the missing information required to complete the assessment.",
+      "enabled": true
+    },
+    {
+      "id": "failed_eligibility_rule",
+      "condition": {"failed_eligibility_rule": true},
+      "score_delta": -30,
+      "blocker": true,
+      "message": "An official eligibility rule was not satisfied.",
+      "enabled": true
+    },
+    {
+      "id": "low_document_quality",
+      "condition": {"document_quality": "LOW"},
+      "score_delta": -10,
+      "blocker": false,
+      "message": "Replace the low-quality document image with a clearer copy.",
+      "enabled": true
+    }
+  ]
+}
+

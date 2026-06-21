@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "document_types": {
+    "aadhaar": {
+      "fields": {
+        "name": {"type": "string", "required": true},
+        "dob": {"type": "date", "required": false},
+        "address": {"type": "string", "required": false},
+        "aadhaar_number": {"type": "string", "required": false, "sensitive": true}
+      }
+    },
+    "bank_passbook": {
+      "fields": {
+        "name": {"type": "string", "required": true},
+        "account_number": {"type": "string", "required": false, "sensitive": true},
+        "ifsc": {"type": "string", "required": false},
+        "address": {"type": "string", "required": false}
+      }
+    },
+    "income_certificate": {
+      "fields": {
+        "name": {"type": "string", "required": true},
+        "annual_income": {"type": "number", "required": false},
+        "issue_date": {"type": "date", "required": false},
+        "expiry_date": {"type": "date", "required": false}
+      }
+    },
+    "land_record": {
+      "fields": {
+        "owner_name": {"type": "string", "required": false, "profile_field": "name"},
+        "plot_identifier": {"type": "string", "required": false},
+        "land_ownership_date": {"type": "date", "required": false},
+        "address": {"type": "string", "required": false}
+      },
+      "user_action_required": "land_ownership_date is captured but must remain unused until the official cutoff and inheritance rule is verified."
+    },
+    "family_record": {
+      "fields": {
+        "family_members": {"type": "array", "required": false},
+        "address": {"type": "string", "required": false}
+      },
+      "user_action_required": null
+    }
+  }
+}
