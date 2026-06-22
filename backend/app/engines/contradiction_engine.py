@@ -1,4 +1,5 @@
 import json
+import re
 from datetime import date, datetime
 from pathlib import Path
 from typing import Any
@@ -69,7 +70,7 @@ class ContradictionEngine:
             present_sources = {value.source for value in values}
             if not set(rule.document_types).issubset(present_sources):
                 return None
-        if len({self._comparison_key(value.value) for value in values}) < 2:
+        if len({self._comparison_key(field, value.value) for value in values}) < 2:
             return None
         return AnalysisIssue(
             code=rule.id,
@@ -120,8 +121,14 @@ class ContradictionEngine:
         return None
 
     @staticmethod
-    def _comparison_key(value: Any) -> str:
-        normalized = " ".join(value.split()).casefold() if isinstance(value, str) else value
+    def _comparison_key(field: str, value: Any) -> str:
+        if isinstance(value, str):
+            normalized = value.casefold()
+            if field == "address":
+                normalized = re.sub(r"[^\w\s]", " ", normalized)
+            normalized = " ".join(normalized.split())
+        else:
+            normalized = value
         return json.dumps(normalized, sort_keys=True, default=str, ensure_ascii=False)
 
     @staticmethod

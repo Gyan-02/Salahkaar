@@ -81,10 +81,12 @@ function SchemeStep({ onChoose }: { onChoose: (id: ProgramId) => void }) {
 }
 
 function BooleanField({
+  name,
   label,
   value,
   onChange,
 }: {
+  name: string;
   label: string;
   value: boolean | "";
   onChange: (value: boolean) => void;
@@ -97,6 +99,7 @@ function BooleanField({
           <input
             required
             type="radio"
+            name={name}
             checked={value === true}
             onChange={() => onChange(true)}
           />{" "}
@@ -106,6 +109,7 @@ function BooleanField({
           <input
             required
             type="radio"
+            name={name}
             checked={value === false}
             onChange={() => onChange(false)}
           />{" "}
@@ -240,9 +244,20 @@ export function CheckFlow() {
   };
   const submitInfo = (event: FormEvent) => {
     event.preventDefault();
+    const unanswered = scheme?.questions.filter(
+      (question) =>
+        answers[question.field] === undefined || answers[question.field] === "",
+    );
+    if (unanswered?.length) {
+      setError(
+        `Answer all applicant questions before continuing. ${unanswered.length} answer${unanswered.length === 1 ? " is" : "s are"} still missing.`,
+      );
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      return;
+    }
     if (!payload?.documents.length) {
       setError(
-        "Add information from at least one mock document before continuing.",
+        "Upload a document or enter information from at least one document before continuing.",
       );
       return;
     }
@@ -313,6 +328,7 @@ export function CheckFlow() {
                     question.type === "boolean" ? (
                       <BooleanField
                         key={question.field}
+                        name={question.field}
                         label={question.label}
                         value={(answers[question.field] ?? "") as boolean | ""}
                         onChange={(value) =>

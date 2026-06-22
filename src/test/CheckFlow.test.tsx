@@ -5,6 +5,27 @@ import { schemeById } from "../config";
 import { buildRequest, CheckFlow } from "../pages/CheckFlow";
 
 describe("readiness check flow", () => {
+  it("blocks review when scheme questions are unanswered", () => {
+    render(
+      <MemoryRouter initialEntries={["/check?scheme=pm-kisan"]}>
+        <CheckFlow />
+      </MemoryRouter>,
+    );
+    fireEvent.change(screen.getByLabelText(/name on identity record/i), {
+      target: { value: "Ravi Kumar" },
+    });
+    const reviewButton = screen.getByRole("button", {
+      name: /review information/i,
+    });
+    fireEvent.submit(reviewButton.closest("form")!);
+    expect(
+      screen.getByText(/7 answers are still missing/i),
+    ).toBeInTheDocument();
+    expect(
+      screen.queryByText(/review before analysis/i),
+    ).not.toBeInTheDocument();
+  });
+
   it("preserves entered information when the backend is unavailable", async () => {
     vi.stubGlobal("fetch", vi.fn().mockRejectedValue(new Error("offline")));
     render(

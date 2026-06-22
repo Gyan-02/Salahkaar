@@ -51,3 +51,23 @@ def test_address_mismatch_has_medium_severity(profile_builder) -> None:
     assert result.issues[0].code == "cross_document_address_mismatch"
     assert result.issues[0].severity.value == "MEDIUM"
 
+
+def test_address_punctuation_difference_is_not_a_contradiction(profile_builder) -> None:
+    profile = profile_builder.build(
+        [
+            ProfileDocument(
+                document_type="aadhaar",
+                fields={
+                    "address": "House 42, Demo Colony, Patna, Bihar, 800001"
+                },
+            ),
+            ProfileDocument(
+                document_type="land_record",
+                fields={
+                    "address": "House 42, Demo Colony, Patna, Bihar 800001"
+                },
+            ),
+        ]
+    )
+    result = ContradictionEngine(today=date(2026, 6, 21)).check(profile)
+    assert result.issues == []
